@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+    
+    // คี่
+    for ( int i = 0 ; i < 5 ; ++i ) {
+
+        for ( int j = 0 ; j < 5 ; ++j ) {
+            if ( i == 4 - j ) {
+                printf ( " 1 " ) ;
+            } else {
+                printf( " 0 " ) ;
+            } //End if
+        } //End for
+        printf( " \n " ) ;
+    } //End คี่
+    
+    printf("\n");
+    
+    // คู่
+    for ( int i = 0 ; i < 4 ; ++i )  {
+
+        for ( int j = 0 ; j < 4 ; ++j ) {
+            if ( j == i ) {
+                printf ( " 1 " ) ;
+            } else {
+                printf( " 0 " ) ;
+            } //End if
+        } //End for
+
+        printf ( " \n " ) ;
+
+    }// End คู่ 
+
+    return 0;
+
+}// End functon
+
